@@ -1,4 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+
 $Cyan: hsl(179, 62%, 43%);
 $Bright-Yellow: hsl(71, 73%, 54%);
 $Light-Gray: hsl(204, 43%, 93%);
 $Grayish-Blue: hsl(218, 22%, 67%);
+
+$font: "Karla", sans-serif;
+
+$spacing: (1, 2, 3, 4, 5);
+@each $space in $spacing {
+    .m-#{$space} {
+        margin: #{$space}rem;
+    }
+    .my-#{$space} {
+        margin: #{$space}rem 0;
+    }
+    .p-#{$space} {
+        padding: #{$space}rem;
+    }
+    .py-#{$space} {
+        padding: #{$space}rem 0;
+    }
+}
